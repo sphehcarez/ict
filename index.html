@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ICT Midterm Review 2024/2025 Program">
+    <meta name="author" content="KZN DOT">
+
+    <title>ICT Midterm Review 2024/2025</title>
+
+    <!-- CSS FILES -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-leadership-event.css" rel="stylesheet">
+
+    <style>
+        /* Divider Styles */
+        .divider {
+            display: block;
+            height: 4px;
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 2px;
+        }
+
+        .divider-presentations {
+            background-color: #007847;
+        }
+
+        .divider-tea-break {
+            background-color: #ffb612;
+        }
+
+        .divider-lunch-break {
+            background-color: #000000;
+        }
+
+        /* Section Titles with Colorful Background */
+        .section-title {
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .presentations-title {
+            background-color: #007847;
+        }
+
+        .tea-break-title {
+            background-color: #ffb612;
+        }
+
+        .lunch-break-title {
+            background-color: #000000;
+        }
+
+        /* Ensure readability */
+        .section-title p {
+            color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .datetime {
+                font-size: 24px;
+                margin: 20px;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container text-center">
+            <!-- Center the Brand -->
+            <a href="index.html" class="navbar-brand d-block mx-auto">
+                <img src="./images/avatar/thumb_4_transport.png" alt="KZN DOT" class="brand-logo" style="width: 200px; height: auto;">
+            </a>
+    
+            <!-- Date and Time Section -->
+            <div class="datetime d-block mx-auto" style="font-size: 16px; color: #fff;">
+                <span id="currentDate"></span> | <span id="currentTime"></span>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <script>
+        function updateDateTime() {
+            const currentDateElement = document.getElementById('currentDate');
+            const currentTimeElement = document.getElementById('currentTime');
+            
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const dateString = now.toLocaleDateString(undefined, options);
+            const timeString = now.toLocaleTimeString();
+    
+            currentDateElement.textContent = dateString;
+            currentTimeElement.textContent = timeString;
+        }
+    
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+    
+        // Initial call to display the date and time immediately
+        updateDateTime();
+    </script>
+    
+
+    <section class="schedule section-padding" id="section_4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <h2 class="mb-5 text-center">ICT MID-TERM REVIEW <u class="text-success">2024/2025</u></h2>
+                    
+                    <h6 class="mb-5 text-center">Programme Facilitator: Mr N Ndamane</u></h6>
+
+                    <nav>
+                        <div class="nav nav-tabs align-items-baseline" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-DayOne-tab" data-bs-toggle="tab" data-bs-target="#nav-DayOne" type="button" role="tab" aria-controls="nav-DayOne" aria-selected="true">
+                                <h3>Day One <small>October 14, 2024</small></h3>
+                            </button>
+                            <button class="nav-link" id="nav-DayTwo-tab" data-bs-toggle="tab" data-bs-target="#nav-DayTwo" type="button" role="tab" aria-controls="nav-DayTwo" aria-selected="false">
+                                <h3>Day Two <small>October 15, 2024</small></h3>
+                            </button>
+                            <button class="nav-link" id="nav-DayThree-tab" data-bs-toggle="tab" data-bs-target="#nav-DayThree" type="button" role="tab" aria-controls="nav-DayThree" aria-selected="false">
+                                <h3>Day Three <small>October 16, 2024</small></h3>
+                            </button>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content mt-5" id="nav-tabContent">
+                        <!-- Day One Program -->
+                        <div class="tab-pane fade show active" id="nav-DayOne" role="tabpanel" aria-labelledby="nav-DayOne-tab">
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/hod51ncy.png" class="schedule-image img-fluid" alt="Arrival and Registration">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Arrival and Registration</h4>
+                                    <p>Facilitator: All</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>08H30 - 09H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Overview.jpg" class="schedule-image img-fluid" alt="Welcome">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Welcome</h4>
+                                    <p>Facilitator: All</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>09H00 - 09H10</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/microphone-704255_1280.jpg" class="schedule-image img-fluid" alt="Purpose of the Day">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Purpose of the Day, Overview, and Adoption of the Program</h4>
+                                    <p>Facilitator: ITMS Director</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>09H10 - 09H30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presentations Divider -->
+                            <div class="section-title presentations-title">PRESENTATIONS</div>
+                            <span class="divider divider-presentations"></span>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/analysis-1841158_1280.jpg" class="schedule-image img-fluid" alt="IT Governance">
+                                </div>
+                                <!--Changes for swapping-->
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">IT Support</h4>
+                                    <p>Facilitator: Basil Cele</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>09H30 - 10H30</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tea Break Divider -->
+                            <div class="section-title tea-break-title">TEA BREAK</div>
+                            <span class="divider divider-tea-break"></span>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Break.jpg" class="schedule-image img-fluid" alt="Tea Break">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Tea Break</h4>
+                                    <p>Break for refreshments</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>10H30 - 10H45</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Digital imagery 1.jpg" class="schedule-image img-fluid" alt="Digital Strategy">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Progress on the Implementation of the Digital Strategy</h4>
+                                    <p>Facilitator: Zama Mahaye</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>10H45 - 11H45</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/business-idea-3683781_1280.jpg" class="schedule-image img-fluid" alt="Project Management">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Project Management</h4>
+                                    <p>Facilitator: Nozipho Zuma</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>11H45 - 12H30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/change.jpg" class="schedule-image img-fluid" alt="Project Management">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Change Management</h4>
+                                    <p>Facilitator: Nomfundo Shezi</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>12H30-13H15</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Lunch Break Divider -->
+                            <div class="section-title lunch-break-title">LUNCHBREAK</div>
+                            <span class="divider divider-lunch-break"></span>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Break.jpg" class="schedule-image img-fluid" alt="Lunch Break">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Lunch Break</h4>
+                                    <p>Time to relax and refresh</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>13H15 - 14H15</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Race.png" class="schedule-image img-fluid" alt="Team Building">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Team Building</h4>
+                                    <p>All Participants</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>14H15 - End of Day 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day Two Program -->
+                        <div class="tab-pane fade" id="nav-DayTwo" role="tabpanel" aria-labelledby="nav-DayTwo-tab">
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Recappppp.png" class="schedule-image img-fluid" alt="Recap from Day 1">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Recap from Day 1</h4>
+                                    <p>Facilitator: Director: ITMS</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>08H00 - 08H30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/network-2402637_1280.jpg" class="schedule-image img-fluid" alt="Business Solutions">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Business Solutions</h4>
+                                    <p>Facilitator: David Myeni</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>08H30 - 09H30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Analyst-smartgenie.co_.jpg" class="schedule-image img-fluid" alt="Business Analytics">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Business Analysis</h4>
+                                    <p>Facilitator: Mxolisi Shazi</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>09H30 - 10H30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tea Break Divider -->
+                            <div class="section-title tea-break-title">TEA BREAK</div>
+                            <span class="divider divider-tea-break"></span>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Break.jpg" class="schedule-image img-fluid" alt="Tea Break">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Tea Break</h4>
+                                    <p>Break for refreshments</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>10H30 - 11H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/cyberspace-2784907_1280.jpg" class="schedule-image img-fluid" alt="Infrastructure - Session 1">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Infrastructure - Session 1</h4>
+                                    <p>Facilitator: Sinethemba Mkhize</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>11H00 - 12H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Hybrid.png" class="schedule-image img-fluid" alt="Infrastructure - Session 2">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Infrastructure - Session 2</h4>
+                                    <p>Facilitator: Katlego Mothogoane</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>12H00 - 13H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Lunch Break Divider -->
+                            <div class="section-title lunch-break-title">LUNCHBREAK</div>
+                            <span class="divider divider-lunch-break"></span>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Break.jpg" class="schedule-image img-fluid" alt="Lunch Break">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Lunch Break</h4>
+                                    <p>Time to relax and refresh</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>13H00 - 14H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/security-265130_1280.jpg" class="schedule-image img-fluid" alt="IT Security">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">IT Security</h4>
+                                    <p>Facilitator: Ashney Moodley</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>14H00 - 15H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/ITMSand.png" class="schedule-image img-fluid" alt="IT Service Management">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">IT Service Management</h4>
+                                    <p>Facilitator: Joash Singh & Sandra Mahlasela</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>15H00 - 16H00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Governance.png" class="schedule-image img-fluid" alt="IT Support">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">IT Governance</h4>
+                                    <p>Facilitator: Nomsa Thabede</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>16H15 - 17H00</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/the-end-3408301_1280.jpg" class="schedule-image img-fluid" alt="Closing Remarks">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Closing Remarks</h4>
+                                    <p>Facilitator: Director: ITMS</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>17H00 - 17H30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day Three Program -->
+                        <div class="tab-pane fade" id="nav-DayThree" role="tabpanel" aria-labelledby="nav-DayThree-tab">
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/Recappppp.png" class="schedule-image img-fluid" alt="Recap from Day 2">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Recap from Day 2</h4>
+                                    <p>Facilitator: Director: ITMS</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>08H00 - 08H30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom pb-5 mb-5">
+                                <div class="col-lg-4 col-12">
+                                    <img src="images/photocards/projects-5235095_1280.jpg" class="schedule-image img-fluid" alt="Site Visits">
+                                </div>
+                                <div class="col-lg-8 col-12 mt-3 mt-lg-0">
+                                    <h4 class="mb-2">Site Visits</h4>
+                                    <ul>
+                                        <li>Ports Shepstone RTI</li>
+                                        <li>Ports Shepstone Regional Office</li>
+                                        <li>Ports Shepstone Cost Centre</li>
+                                        <li>Park Reynie</li>
+                                        <li>Rossburgh</li>
+                                    </ul>
+                                    
+                                    <div class="d-flex align-items-center mt-4">
+                                        <span class="mx-3 mx-lg-5"><i class="bi-clock me-2"></i>09H00 - 12H00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="call-to-action section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7 col-12">
+                    <!-- <h2 class="text-white mb-4">Driving Innovation, <u class="text-info">Empowering Mobility</u></h2> -->
+
+                    <p class="text-white">Driving Innovation, Empowering Mobility</p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-lg-auto mt-4 mt-lg-0">
+                    <!-- <a href="#section_5" class="custom-btn btn">Register Today</a> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-12 col-12 border-bottom pb-5 mb-5">
+                    <div class="d-flex">
+                        <a href="index.html" class="navbar-brand">
+                            <span class="brand-text">KwaZulu-Natal Department of Transport <br> Information Technology and Management Services</span>
+                             
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-12">
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Copyright © 2024 KZN DOT ITMS</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Designed by Digital Strategy Implementation Dev Team </a></li>
+
+                    
+                    </ul>
+                </div>
+
+                    
+                <div class="col-lg-5 col-12 ms-lg-auto">
+                    <div class="copyright-text-wrap d-flex align-items-center">
+                    
+      
+
+                        <a href="#" class="bi-arrow-up arrow-icon custom-link"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
